@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat&display=swap'); /*Montserrat dan BebasNeue*/
+
+body{
+   font-family: 'Montserrat', sans-serif; /*mengambil dari import url, dan generic font*/
+   margin: 0;
+   padding: 0;
+   color: white;
+   /* background-color: gray; */
+   background-color: #1b1a1a;
+ }
+
+h2{
+    color: red;
+    font-weight: bold;
+}
+
+h3{
+    color: white;
+    font-weight: bold;
+}
+  
+header{
+   display: inline;
+}
+
+.jumbotron{
+   background-color: black;
+   background-image: url('../image/header.jpg');
+   background-position: center;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   
+   padding: 60px;
+   height: 530px;
+   text-align: center;
+   font-size: 17px;
+   color: white;
+   font-weight: bold;
+}
+
+.shadowsubtitle{
+   text-shadow: 1px 10px 1px black;
+}
+
+h1{
+   font-family: 'Bebas Neue', sans-serif; /*mengambil dari import url, dan generic font*/
+   letter-spacing: 3px;
+   color: red;
+   font-size: 50px;
+   text-shadow: 5px 2px 7px black;
+}
+
+footer{
+   padding: 2px;
+   color: white;
+   background-color: black;
+   text-align: center;
+   font-weight: bold;
+   font-size: 15px;
+}
+
+footer p{
+   text-align: center;
+}
+
+nav{
+   background-color: black;
+   padding: 5px;
+   text-align: center;
+   font-family: 'Montserrat', sans-serif; /*mengambil dari import url, dan generic font*/
+
+   /*membuat sticky navigation*/
+   position: sticky;
+   top: 0; /*agar posisi navigasi dipaling atas*/
+   margin-left: -40px;
+}
+
+nav a{
+   font-size: 13px;
+   font-weight: 400;
+   text-decoration: none;
+
+   color: white;
+}
+
+nav li{
+   display: inline;
+   list-style-type: none;
+   margin: 30px 30px;
+   
+}
+
+nav a:hover{
+   color: red;
+   font-weight: bold; 
+}
+
+.profile header{
+   text-align: center;
+}
+
+.profile img{
+   width: 200px;
+}
+
+.featured-image{
+   width: 100%;
+   max-height: 480px;
+   object-fit: cover;
+   object-position: center;
+}
+
+.card{
+   box-shadow: 0 1px 0px 0 #1b1a1a;
+   border-radius: 0px;
+   background-color: black;
+
+   padding: 25px;
+   margin-top: 9px;
+   text-align: justify;
+}
+
+main{
+   padding: 0px;
+   overflow: auto; /*agar tidak bentrok antara content dan aside*/
+}
+
+#content{
+   float: left;
+   width: 75%; 
+   /* width: 100%; */
+}
+
+aside{
+   float: right;
+   width: 25%;
+
+   padding-left: 10px; /*agar aside menjorok ke kiri*/
+   /* padding-right: 10px; */
+}
+
+*{
+   box-sizing: border-box;
+}
+
+/*agar <aside> berada dibawah*/
+@media screen and (max-width: 1000px) {
+   #content,
+   aside {
+     width: 100%;
+     padding: 0;
+   }
+ }
